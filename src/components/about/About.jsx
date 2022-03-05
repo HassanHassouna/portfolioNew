@@ -1,7 +1,9 @@
 import React from "react"
 import "./about.css"
 import ME from "../../assets/me2.jpeg"
-import { FaAward, FaCode, FaLaptopCode, FaUser } from "react-icons/fa"
+import { FaReact, FaNode } from "react-icons/fa"
+import { SiPostgresql } from "react-icons/si"
+
 const About = () => {
   return (
     <section id="about">
@@ -16,26 +18,28 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>I am a Full Stack Developer</small>
+              <FaReact className="about__icon" />
+              <h5>React.Js</h5>
             </article>
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>I am a Full Stack Developer</small>
+              <FaNode className="about__icon" />
+              <h5>Node.Js</h5>
             </article>
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>I am a Full Stack Developer</small>
+              <SiPostgresql className="about__icon" />
+              <h5>PostgreSQL</h5>
             </article>
           </div>
 
           <p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            Hello! I am Hassan. I have finished recently a Full Stack Bootcamp
+            and looking for my first position as a Full Stack Developer.
+            Technologies I learned is MERN(MongoDB, Express, ReactJS and
+            NodeJS). I create responsive websites that are displayed on all
+            devices desktops and smartphones. Of course, before I begin
+            developing any webapp, Landing Page, Business Website or E-commerce,
+            I need to have a ready-made project layout (sketch). I’m ready to
+            learn more everyday and looking for improve and show my skills.
           </p>
 
           <a href="#contact" className="btn btn-primary">
