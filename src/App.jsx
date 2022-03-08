@@ -1,4 +1,5 @@
 import React from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./components/header/Header"
 import Nav from "./components/nav/Nav"
 import About from "./components/about/About"
@@ -8,7 +9,8 @@ import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
 import Portfolio from "./components/portfolio/Portfolio"
-const App = () => {
+
+const Home = () => {
   return (
     <>
       <Header />
@@ -20,6 +22,17 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
+    </>
+  )
+}
+const App = () => {
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" index element={<Home />}></Route>
+        </Routes>
+      </Router>
     </>
   )
 }
